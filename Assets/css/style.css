@@ -1,0 +1,177 @@
+
+/* Setting variable colors */
+:root {
+    --primarycolor:#13293d;
+    --offwhite: #f8f8ff;
+    --hover:blue;
+    --hover2: yellow;
+    --background: gray;
+
+}
+
+header {
+    position: relative;
+    width: 100%;    
+    background-color: var(--primarycolor);
+    
+}
+
+footer {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: var(--primarycolor);
+    color: yellow;
+    font-size: 30px;;
+}
+
+a  {
+    color: yellow;  
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+/* Styling links in navbar */
+.list {
+     text-align: right;
+     padding-bottom: 20px;   
+     padding-right: 40px;
+       
+}
+
+li {
+    display: inline;
+
+}
+
+h2 {
+    border-bottom: solid 10px lightcoral;
+    width: 50%;
+    padding-top: 50px;
+    
+}
+
+/* Styling h1 in header */
+h1#header {
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 50px;
+    color: yellow;
+    text-align: left;
+}
+
+
+body{
+   
+    background-color: var(--background);
+}
+
+/* About me section */
+.aboutMe {
+
+        position: relative;
+        text-align: left; 
+        height: auto;
+        width: 75%;
+        left: 5%;
+        margin: 2.5%;      
+        font-size: 40px;    
+        padding-bottom: 10px;     
+  
+}
+
+/* Profile avatar */
+.avatar{
+    float: left;
+    padding-right: 25px;
+
+}
+.container {
+    background-color: var(--offwhite);
+}
+
+/* Begin Portfolio styling */
+.port-cont{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.port{
+    position: relative;
+    text-align: left; 
+    height: 350px;
+    width: 350px;
+    left: 6%;
+    margin: 3%;
+    flex-grow: 300px;
+    background-image: url(/Assets/images/Computer.jpg);
+    background-size: 95%;
+        
+}
+
+.port .port-hedr{
+    border: solid 3px;
+    border-color: var(--secondarycolor);
+    border-radius: 1px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    left: 0;    
+    color: var(--offwhite);
+    background-color: var(--primarycolor);
+    width: 75%;
+    font-size: 55px;
+
+}
+
+.port:hover,
+.port:hover .port-hedr{
+    box-shadow: inset 0px 0px 20px var(--hover), 0 0 20px var(--hover2)
+}
+
+.port .port-body{
+    position: relative;
+   
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    text-align: left;
+    user-select: all;
+    
+    flex-direction: column;
+    margin: 15px;
+    border-radius: 15px;
+    height: 50%;  
+}
+
+/* end portfolio styling */
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+.port {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+  
+@media screen and (max-width: 768px) {
+.port { 
+    width: 75%;
+    margin: 0%;
+    padding: 0%;
+}
+
+@media screen and (max-width: 767px) {
+.port {
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+} 
