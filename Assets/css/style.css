@@ -111,7 +111,7 @@ body{
     left: 6%;
     margin: 3%;
     flex-grow: 300px;
-    background-image: url(../images/Computer.jpg);
+    background-image: url(./Computer.jpg);
     background-size: 95%;
         
 }
